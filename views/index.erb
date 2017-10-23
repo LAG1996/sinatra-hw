@@ -2,15 +2,27 @@
 	<head>
 		<title><%= @title %></title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel = "stylesheet" href= "./mycss.css">
 
 	</head>
 	<body>
-		<h1><%= @headline %></h1>
-		<p><%= @paragraph %></p>
+		<div id = "posts" class = "container">
 
-		<% @posts.each do |post| %>
-		    <h2><%= post.title %></h2>
-		    <p><%= post.body %></p>
-		<% end %>
+			<div id = "heading">
+				<h1 class = "display-1"><%= @headline %></h1>
+				<p class = "lead"><%= @paragraph %></p>
+			</div>
+
+			<% @posts.each do |post| %>
+					<div class ="post-title">
+				    	<h2><%= post.title %></h2>
+					</div>
+					<div class = "post-body">
+				    	<p><%= post.body %></p>
+					</div>
+			<% end %>
+
+
+		</div>
 	</body>
 </html>

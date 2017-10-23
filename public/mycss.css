@@ -1,0 +1,19 @@
+#heading{
+	background: #F3FABE;
+	padding: 50px;
+	color: #6EE45B;
+}
+
+.post-title{
+	text-align: right;
+	background: #6EC0F0;
+}
+
+.post-body{
+	background: #0F0F0F;
+	color: #DDDDDD;
+}
+
+body{
+	background: #0F0F0F;
+}
